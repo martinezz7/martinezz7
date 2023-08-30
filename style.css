@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --cor--principal: #483D8B;
+    --cor--bg: #11141a;
+    --cor--header: #0c0c0e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+header{
+    position: fixed;
+    top: 0;
+    left: 50;
+    width: 100%;
+    padding: 20px 120px;
+    background: var(--cor--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+nav a:hover,
+nav a.active{
+    color: red;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor--bg);
+    color: #fff;
+    font-weight: 700;
+}
+
+.cabecalho__logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: var(--cor--bg);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cor--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover{
+    border-style: solid;
+    border-color: rgb(194, 0, 0);
+    transition: 0.5;
+}
+
+.swiper{
+    color: #fff;
+    background-color: #fff;
+    width: 100%;
+}
+
